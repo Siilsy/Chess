@@ -114,7 +114,7 @@ def prom(x,y): #Affichage et sélection de la promotion
    sl(0.2)
   if kd(1) and xr>0:xr,newp=xr-1,True
   elif kd(2) and xr<3:xr,newp=xr+1,True
-  elif kd(4)or kd(52)or pl in IApl:
+  elif kd(4)or kd(52)or pl in AIpl:
    if y==0:dspl[y][x]=6 if xr==0 else 3 if xr==1 else 2 if xr==2 else 4
    else:dspl[y][x]=12 if xr==3 else 9 if xr==2 else 8 if xr==1 else 10
    for i in range(8):
