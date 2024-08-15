@@ -30,6 +30,8 @@ It was coded on a NumWorks calculator in MicroPython.
 ##
 
 ## 🛠️ Details
+I'm sorry for the disappointment, but the AI for the robot only plays random moves. If I had more space, I might have implemented a better AI. Maybe next time, why not?
+
 You can adjust the timer duration by modifying the code at line 406. Change the value (currently set to 600 seconds) to allow 10 minutes per player. Don't forget to convert the time to seconds!
 
 You can also set the AI to play as a specific side. To do this, modify line 17. If you’re playing with a friend, remove all AI controls, but if you want to play as black, leave the AI set to play the first turn by entering '1'.
