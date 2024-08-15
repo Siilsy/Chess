@@ -13,7 +13,7 @@ s,ss=27,2
 sz=8*s
 tl=lambda a,b:216+(104-(len(str(a))+b)*10)//2
 ww=wb=0
-IApl=[2]
+AIpl=[2]
 fen="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
 fen=fen.split(' ')
 fen[4]=int(fen[4])
@@ -373,7 +373,7 @@ def eg(game): #extract game (from fen)
     for _ in range(int(p)):dspl[i][n]=table[0];n+=1
  return dspl
 
-def IA(): #coup ennemi
+def AI(): #coup ennemi
  global xp,yp,x,y
  xp,yp=x,y
  num1=rd(0,len(bf)-1)
@@ -382,7 +382,7 @@ def IA(): #coup ennemi
  num2=rd(1,len(bf[num1])-1)
  x,y=bf[num1][num2][0],bf[num1][num2][1]
  ok()
- if len(IApl)!=2:x,y=xp,yp
+ if len(AIpl)!=2:x,y=xp,yp
 
 while True:
  fr(0,0,320,222,itfc)
@@ -423,7 +423,7 @@ while True:
    fr(x*s,y*s,s,s,slct),fr(x*s+ss,y*s+ss,s-ss*2,s-ss*2,f[y][x]),draw(x,y)
    sl(0.2)
   dt()
-  if pl in IApl:IA()
+  if pl in AIpl:AI()
   if kd(1)and y>0:xp,yp,y,new,mov=x,y,y-1,True,1
   elif kd(2)and y<7:xp,yp,y,new,mov=x,y,y+1,True,1
   if kd(0)and x>0:xp,yp,x,new=x,y if mov==0 else yp,x-1,True
