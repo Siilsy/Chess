@@ -236,7 +236,7 @@ def gu(): #Give Up
 #   fr(a*s,b*s,s,s,f[b][a]),draw(a,b)
 
 def win(pl,wc): #Victoire
- draw(x,y)
+ if wc!=2:draw(x,y)
  global game,ww,wb
  sl(3),fr(0,0,320,222,(255,)*3)
  if pl==1:wb+=1;winner="noirs"
@@ -248,7 +248,7 @@ def win(pl,wc): #Victoire
  sl(5)
  game=False
 def tie(wc): #Egalité
- draw(x,y)
+ if wc!=4:draw(x,y)
  global game
  sl(3),fr(0,0,320,222,(255,)*3)
  ds("Egalité !",115,51 if wc==5 else 61)
