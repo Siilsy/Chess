@@ -430,4 +430,4 @@ while True:
   elif kd(3)and x<7:xp,yp,x,new=x,y if mov==0 else yp,x+1,True
   elif kd(4)or kd(52):ok()
   elif kd(12):gu()
-  elif kd(13):ad()
+#  elif kd(13):ad()
